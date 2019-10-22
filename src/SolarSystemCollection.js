@@ -8,19 +8,6 @@ export default class SolarSystemCollection extends React.Component {
 
 
   renderSearchedOrReg = () => {
-    // this.props.filterBodies.length > 0
-    // ?
-    // this.props.filterBodies.map(body => {
-    //   return <SolarSystemCard {...body}
-    //   key={body.id}
-    //   handleSelect={this.props.handleSelect}/>
-    // })
-    // :
-    // this.props.bodies.map(body => {
-    //   return <SolarSystemCard {...body}
-    //   key={body.id}
-    //   handleSelect={this.props.handleSelect}/>
-    // })
     if (this.props.filterBodies.length > 0){
       return this.props.filterBodies.map(body => {
         return <SolarSystemCard {...body}
@@ -38,8 +25,10 @@ export default class SolarSystemCollection extends React.Component {
 
   help = () => {
     if (this.props.open){
+      console.log("open true")
       return <ObjectPage currentBody={this.props.currentBody} />
     } else {
+      console.log("open false")
       return this.renderSearchedOrReg()
     }
   }
@@ -48,7 +37,7 @@ export default class SolarSystemCollection extends React.Component {
     console.log("collection props:", this.props)
     return (
       <Grid>
-        
+
           <div className="ui-grid">
 
               <select onChange={(event) => this.props.changeSortType(event.target.value)} className="ui standard button">

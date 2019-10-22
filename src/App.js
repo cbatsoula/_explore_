@@ -144,7 +144,9 @@ class App extends React.Component {
     this.setState({
       filterBodies: [],
       planetFilter: false,
-      bodies: this.state.bodies
+      bodies: this.state.bodies,
+      currentBody: null,
+      open: false
     })
   }
 

@@ -6,7 +6,6 @@ import ObjectComments from './ObjectComments';
 import ObjectQuiz from './ObjectQuiz';
 
 
-
 export default class ObjectPage extends React.Component {
 
   state = {
