@@ -26,14 +26,14 @@ export default class ObjectPage extends React.Component {
         <Container text>
           <Header as='h2'>{englishName}</Header>
             <ul>
-              <li>Discovered by:{discoveredBy ? discoveredBy : ' difficult to pinpoint'}</li>
-              <li>Discovered on:{discoveryDate ? discoveryDate : ' difficult to pinpoint'}</li>
+              <li>Discovered by: {discoveredBy ? discoveredBy : ' difficult to pinpoint'}</li>
+              <li>Discovered on: {discoveryDate ? discoveryDate : ' difficult to pinpoint'}</li>
               {
                 isPlanet
                 ?
                 <li>Is a planet</li>
                 :
-                <li>For a moon, the planet around which it is orbiting:   {aroundPlanet.planet}</li>
+                <li>For a moon, the planet around which it is orbiting:   {aroundPlanet.planet.toUpperCase()}</li>
               }
               <li>Gravity: {gravity}</li>
               <li>Density: {density}</li>

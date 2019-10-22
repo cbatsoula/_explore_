@@ -33,7 +33,7 @@ class App extends React.Component {
     this.setState({
       sortType: newSortType
     })
-    // console.log("change sort type", newSortType)
+    console.log("change sort type", newSortType)
   }
 
   applyFilter = () => {
@@ -53,22 +53,22 @@ class App extends React.Component {
       case "a - z":
       console.log("not?")
         return [...filteredPlanets].sort((bodyA, bodyB) => {
-            return bodyA.id.localeCompare(bodyB.id)
+            return bodyA.englishName.localeCompare(bodyB.englishName)
           });
       case "gravity":
         return[...filteredPlanets].sort((bodyA, bodyB) => {
           return bodyA.gravity - bodyB.gravity
-        })
+        });
       case "":
         return filteredPlanets;
       case "density":
         return[...filteredPlanets].sort((bodyA, bodyB) => {
           return bodyA.density - bodyB.density
-        })
+        });
       case "mean radius":
         return[...filteredPlanets].sort((bodyA, bodyB) => {
           return bodyA.meanRadius  - bodyB.meanRadius
-        })
+        });
       default:
         return filteredPlanets;
       }

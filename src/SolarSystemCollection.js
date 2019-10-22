@@ -7,14 +7,6 @@ import ObjectPage from './ObjectPage';
 export default class SolarSystemCollection extends React.Component {
 
 
-// {
-//    this.props.currentBody
-//    ?
-//    <ObjectPage currentBody={this.props.currentBody} />
-//    :
-//    null
-// }
-
   renderSearchedOrReg = () => {
     // this.props.filterBodies.length > 0
     // ?
@@ -53,11 +45,11 @@ export default class SolarSystemCollection extends React.Component {
   }
 
   render() {
-    // console.log("collection props:", this.props.open)
+    console.log("collection props:", this.props)
     return (
       <Grid>
-        <h3> celestial bodies </h3>
-          <div className="ui grid">
+        
+          <div className="ui-grid">
 
               <select onChange={(event) => this.props.changeSortType(event.target.value)} className="ui standard button">
                 <option value="none">None</option>

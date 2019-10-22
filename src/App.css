@@ -4,7 +4,12 @@
 }
 
 .index-cards {
-  
+
+}
+
+.ui-grid {
+  display: flex;
+  margin: auto;
 }
 
 
