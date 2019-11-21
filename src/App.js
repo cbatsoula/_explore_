@@ -140,7 +140,6 @@ class App extends React.Component {
   }
 
   showEmAll = () => {
-    // console.log("Soon", this.state.bodies)
     this.setState({
       filterBodies: [],
       planetFilter: false,
@@ -174,7 +173,7 @@ class App extends React.Component {
             case 'home':
               return <Homepage />;
             default:
-              return null;
+              return <Homepage />;
             }
           }
         )()}

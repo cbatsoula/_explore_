@@ -22,7 +22,7 @@ export default class ObjectPage extends React.Component {
       currentBody: {id, name, englishName, isPlanet, discoveredBy, discoveryDate, aroundPlanet, moons, semimajorAxis, perihelion, aphelion, eccentricity, inclincation, mass, vol, density, gravity, escape, meanRadius, equaRadius, polarRadius, flattening, alternativeName, dimension, sideralOrbit, sideralRotation}
     } = this.props;
     return (
-      <div>
+      <div className="ObjectDetailsContainer">
         <Container text>
           <Header as='h2'>{englishName}</Header>
             <ul>

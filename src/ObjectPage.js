@@ -46,7 +46,7 @@ export default class ObjectPage extends React.Component {
         )
       } else {
         return (
-          <div>
+          <div className="ObjectContainer">
 
                 <ObjectDetails
                   currentBody={this.props.currentBody}
