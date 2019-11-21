@@ -34,3 +34,11 @@
 .home-page-description {
   height: 15vh;
 }
+
+.ObjectContainer {
+  display: flex;
+
+}
+.ObjectDetailsContainer {
+  display: flex;
+}
