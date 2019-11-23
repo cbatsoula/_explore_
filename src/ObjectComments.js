@@ -6,7 +6,7 @@ export default class ObjectPage extends React.Component {
   render () {
     console.log("obj comments", this.props)
     return (
-      <div>
+      <div className="ObjectCommentContainer">
 
         <textarea
           onChange={this.props.watchfulComment} rows="6" cols="100" value={this.props.newComment}

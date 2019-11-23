@@ -37,8 +37,26 @@
 
 .ObjectContainer {
   display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
 
 }
 .ObjectDetailsContainer {
   display: flex;
+  /* margin: 25px 50px 75px 100px; */
+  padding: 25px 50px 75px 100px;
+  border: 1px solid black;
+}
+
+.quizContainer {
+  display: flex;
+
+}
+
+.ObjectCommentContainer {
+  display: flex;
+  padding: 20px;
+
+
 }
