@@ -7,11 +7,10 @@
 
 }
 
-.ui-grid {
-  /* change this classname this confused me */
+.ui-sortNsearch {
   display: flex;
-  /* margin: auto; */
-  background-color: #09265c;
+  margin: auto;
+
 }
 
 
