@@ -71,6 +71,7 @@ export default class SolarSystemCollection extends React.Component {
               </div>
             </div>
           </div>
+          <div className="SolarSystemCollection">
             <Grid.Row centered="true" columns={4}>
               <Grid.Column width={16}>
                 <Card.Group itemsPerRow={4} className="index-cards">
@@ -80,6 +81,7 @@ export default class SolarSystemCollection extends React.Component {
                 </Card.Group>
               </Grid.Column>
             </Grid.Row>
+            </div>
       </Grid>
     );
   }

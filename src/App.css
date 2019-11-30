@@ -8,8 +8,10 @@
 }
 
 .ui-grid {
+  /* change this classname this confused me */
   display: flex;
-  margin: auto;
+  /* margin: auto; */
+  background-color: #09265c;
 }
 
 
@@ -61,4 +63,9 @@
   padding: 20px;
 
 
+}
+
+.SolarSystemCollection {
+  background-color: #09265c;
+  color: #d1e1ff;
 }
