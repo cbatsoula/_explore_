@@ -5,7 +5,7 @@ export default class SolarSystemCard extends React.Component {
   render() {
     // console.log("card", this.props)
     return (
-      <Card centered="true" fluid="true" color="green" onClick={(event) => this.props.handleSelect(event, this.props.id)}>
+      <Card className="SolarCard" centered="true" fluid="true" color="green" onClick={(event) => this.props.handleSelect(event, this.props.id)}>
         <Card.Content >
           <Card.Header dataset-id={this.props.id}>Name: {this.props.englishName ? this.props.englishName : this.props.name.toUpperCase()}
           </Card.Header>
