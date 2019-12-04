@@ -51,6 +51,11 @@ export default class ObjectQuiz extends React.Component {
   }
   render () {
     console.log("obj quiz", this.state)
+    // maybe each Q has a div, that way i could add in better styling to each one exactly
+    // quiz should have a redirect to a page that holds;
+    // -correct answers percentage
+    // -wrong answers highlighted
+    // -maybe a random inspirational quote for these trying times
     return (
       <div className="quizContainer">
         <form onSubmit={this.answerSubmit}>
