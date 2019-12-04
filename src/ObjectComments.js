@@ -1,20 +1,24 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react';
 import CommentCard from './CommentCard';
 
-export default class ObjectPage extends React.Component {
+export default class ObjectComments extends React.Component {
 
   render () {
     console.log("obj comments", this.props)
     return (
+      <>
       <div className="ObjectCommentContainer">
 
         <textarea
           onChange={this.props.watchfulComment} rows="6" cols="100" value={this.props.newComment}
           placeholder="Enter a comment here!" />
-        <button
+        <Button
           onClick={this.props.submitComment}
           className="ui violet button"
-          type="submit">Submit</button>
+          type="submit">Submit
+          </Button>
+      </div>
 
           <div class="ui cards">
           { this.props.comments
@@ -26,7 +30,7 @@ export default class ObjectPage extends React.Component {
             null
           }
           </div>
-      </div>
+          </>
 
     );
   }
